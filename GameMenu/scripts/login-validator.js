@@ -1,25 +1,43 @@
 function validationChamps(){
  
-    if (document.contactForm.name.value=='' || !/^[a-zA-Z\s]+$/.test(document.contactForm.name.value)){
-      alert("merci de bien remplir votre nom avec des caractères de l'alphabet");
+    if (document.contactForm.name.value==''){
+      alert("Please enter your name");
       document.getElementById("nameErr").innerText =
        "Please enter your name";
       nameErr=true;
-     
     } else {
       nameErr= false; 
       document.getElementById("nameErr").innerText = "";
-    }
+      }
+
+    if (!/^[a-zA-Z\s]+$/.test(document.contactForm.name.value)){
+      alert("Please enter a valid name");
+      document.getElementById("nameErr").innerText =
+       "Please enter a valid name";
+      nameErr=true;
+    } else {
+      nameErr= false; 
+      document.getElementById("nameErr").innerText = "";
+      }
     if (document.contactForm.email.value==''){
-      alert("merci de bien remplir votre email");
+      alert("Please enter your email");
       document.getElementById("emailErr").innerText =
       "Please enter your email";
       emailErr= true;
-
     } else {
-        emailErr= false; 
-        document.getElementById("emailErr").innerText = "";
+      emailErr= false; 
+      document.getElementById("emailErr").innerText = "";
       }
+    if (!/^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/.test(document.contactForm.email.value)){
+      alert("Please enter a valid email");
+      document.getElementById("emailErr").innerText =
+      "Please enter a valid email";
+      emailErr= true;
+    } else {
+      emailErr= false; 
+      document.getElementById("emailErr").innerText = "";
+      }
+      
     
   
   
@@ -43,4 +61,4 @@ function validationChamps(){
         // Display input data in a dialog box before submitting the form
         alert(dataPreview);
       }
-  };
+};
