@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/login.css">
+    <link rel="stylesheet" href="./styles/style.css">
+    <script src ="./scripts/login-validator.js"></script>
+    <title>Log In</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <p><a href="https://www.capgemini.com/fr-fr/"><span class=class1>Capgemini</span></a></p>
+            <ul>
+                <li><a href ="index.html">Home</a></li>
+                <li><a href ="game.html">Game</a></li>
+                <li><a href ="about.html">About</a></li>
+                <li><a href ="login.html"><span class="class2">Login</span></a></li>
+                <li><a href ="signup.html"><span class="class3">Signup</span></a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+    <div class="container">
+        <div class="logIn">
+            <h1>Log In</h1>
+        </div>
+        <div class="champs">
+            <form name="contactForm" onsubmit="return validationChamps()">
+                <p>Name: <br />
+                <input type="text" name="name" id="name" placeholder="Enter your fullname"></p>
+                <div class="error" id="nameErr"></div>
+                <p>Email: <br />
+                <input type="email" name="email" id="email" placeholder="Enter your email adress"></p>
+                <div class="email" id="emailErr"></div>
+                <input type ="submit"name="submit" id="btn" value="Login"/> 
+
+            </form>
+        </div>
+    </div>
+    </main>
+</body>
+</html>

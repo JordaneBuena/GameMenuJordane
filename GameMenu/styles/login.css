@@ -1,0 +1,46 @@
+*{
+    color:white;
+    
+}
+.container{
+    background-color: rgb(87, 13, 13);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin:auto;
+    margin-top: 70px;
+    width: 30%;
+    border-radius: 1em;
+}
+
+.logIn{
+    background-color: rgb(87, 13, 13);
+
+}
+.champs{
+    background-color: rgb(87, 13, 13);
+}
+
+h1, p, form{
+    background-color: rgb(87, 13, 13);
+}
+
+input{
+    background-color: rgb(245, 245, 237);
+    color:rgb(87, 77, 77);
+    margin-bottom: 10px;
+    border:0px;
+  
+}
+
+#btn{
+    margin:10px;
+    background-color: rgb(245, 245, 237);
+    color:rgb(87, 77, 77);
+}
+
+.error, .email{
+    color:rgb(2, 216, 2);
+    background-color:rgb(87, 13, 13) ;
+}
+
